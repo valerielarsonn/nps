@@ -1,4 +1,4 @@
-class SearchesController < ApplicationController
+class searches_controller < ApplicationController
 
     def nps_connect
         @resp = Faraday.post('https://nps-projectfour.herokuapp.com/nps') do |req|

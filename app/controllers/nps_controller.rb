@@ -46,6 +46,6 @@ class NpsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def np_params
-      params.require(:np).permit(:name, :posting, :image)
+      params.require(:np).permit(:name, :posting, :image, :coordinates, :park_id, :created_at)
     end
 end
